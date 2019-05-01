@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  invoice_number: 
+  project_title: MyString
+  client: MyString
+  issue_date: 2019-02-13
+  due_date: 2019-02-13
+  description: MyText
+  status: MyString
+  notes: MyText
+  terms: MyText
+
+two:
+  invoice_number: 
+  project_title: MyString
+  client: MyString
+  issue_date: 2019-02-13
+  due_date: 2019-02-13
+  description: MyText
+  status: MyString
+  notes: MyText
+  terms: MyText

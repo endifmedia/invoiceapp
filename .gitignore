@@ -10,6 +10,19 @@
 /test/version_tmp/
 /tmp/
 
+# Ignore the default SQLite database.
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+
 # Used by dotenv library to load environment variables.
 # .env
 

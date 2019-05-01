@@ -1,0 +1,10 @@
+<!--<td><input type="text" name="invoice[items][description][]" id="line-item-description"></td>
+<td><input type="text" name="invoice[items][qty][]" id="line-item-qty" 
+class="numeric line-item-qty"></td>
+<td><input type="text" name="invoice[items][rate][]" id="line-item-rate" class="line-item-rate numeric"></td>
+<td><input type="text" name="invoice[items][total][]" id="line-item-total" class="price line-item-total"></td>-->
+
+<td><%= f.text_field :description, class: 'line-item-description', multiple: true %></td>
+<td><%= f.text_field :qty, class: 'numeric line-item-qty', multiple: true %></td>
+<td><%= f.text_field :rate, class: 'line-item-rate numeric', multiple: true %></td>
+<td><%= f.text_field :total, class: 'price line-item-total', multiple: true %></td>

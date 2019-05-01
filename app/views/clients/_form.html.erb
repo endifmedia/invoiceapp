@@ -1,0 +1,73 @@
+<%= form_for(client) do |f| %>
+<div class="row gtr-uniform ">
+
+  <% if client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(client.errors.count, "error") %> prohibited this client from being saved:</h2>
+
+      <ul>
+      <% client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :contact_name, placeholder: "Contact Name" %>
+  </div>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :company, placeholder: "Company" %>
+  </div>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :email, placeholder: "Email" %>
+  </div>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :fax, placeholder: "Fax" %>
+  </div>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :phone, placeholder: "Phone" %>
+  </div>
+
+  <div class="field col-6 col-12-xsmall">
+    <%= f.text_field :cell, placeholder: "Cell" %>
+  </div>
+
+  <div class="field col-9 col-12-xsmall">
+    <%= f.text_field :website, placeholder: "Website" %>
+  </div>
+
+  <div class="field col-9 col-12-xsmall">
+    <%= f.text_field :address, placeholder: "Address" %>
+  </div>
+
+  <div class="field col-9 col-12-xsmall">
+    <%= f.text_field :address_2, placeholder: "Address 2" %>
+  </div>
+
+  <div class="field col-4 col-12-xsmall">
+    <%= f.text_field :city, placeholder: "City" %>
+  </div>
+
+  <div class="field col-4 col-12-xsmall">
+    <%= f.text_field :state, placeholder: "State" %>
+  </div>
+
+  <div class="field col-4 col-12-xsmall">
+    <%= f.text_field :zip, placeholder: "Zip" %>
+  </div>
+
+  <div class="field col-4 col-12-xsmall">
+    <%= f.text_field :address_2, placeholder: "Rate" %>
+  </div>
+
+  <div class="actions col-12 col-12-xsmall">
+    <%= f.submit %>
+  </div>
+
+</div>
+<% end %>

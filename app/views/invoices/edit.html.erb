@@ -1,0 +1,7 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Edit Invoice <span># <%= @invoice.invoice_number %></span></h1>
+
+<%= render 'form', invoice: @invoice %>
+
+<%= link_to 'Back', invoices_path %> | <%= link_to 'View', invoice_path(@invoice, format: :pdf) %>
